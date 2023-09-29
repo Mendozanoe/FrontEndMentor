@@ -1,0 +1,192 @@
+/* Definición de fuentes */
+@font-face {
+    font-family: 'MiFuente';
+    src: url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+}
+
+/* Estilos generales del cuerpo de la página */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'MiFuente', sans-serif;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+div.container {
+    width: 40%;
+    height: 60%;
+    border-radius: 15px;
+    font-size: 11px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 20px rgba(0, 0, 0.02, 0.02);
+    display: flex;
+    /* Agregar flex-direction u otros estilos según sea necesario */
+}
+
+/* Estilos para los elementos "number" */
+div.number {
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, hsl(228, 45%, 44%), hsl(228, 45%, 80%));
+}
+
+/* Estilos para el texto dentro de "number" */
+div.number div.set {
+    font-size: 4em;
+    font-weight: 700;
+    color: white;
+}
+
+/* Estilos para "target-one" */
+div.target-one {
+    background: linear-gradient(to top, hsl(228, 45%, 44%), hsl(228, 45%, 80%));
+    border-radius: 10%;
+    color: white;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Estilos para "text" y "text-t" */
+div.target-one div.text {
+    width: 55%;
+}
+
+div.target-one div.text-t {
+    font-size: 2em;
+}
+
+div.target-one h2.of {
+    color: gray;
+}
+
+div.target-one div.of {
+    color: gray;
+}
+
+/* Estilos para "target-two" */
+div.target-two {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+/* Estilos para columnas en "target-two" */
+div.target-two div.column-2,
+div.target-two div.column-3,
+div.target-two div.column-4,
+div.target-two div.column-5 {
+    width: 90%;
+    margin: 3px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* Colores para columnas en "target-two" */
+div.target-two div.column-2 {
+    background-color: bisque;
+    color: red;
+}
+
+div.target-two div.column-3 {
+    background-color: rgb(230, 200, 230);
+    color: orange;
+}
+
+div.target-two div.column-4 {
+    background-color: rgb(228, 232, 254);
+    color: green;
+}
+
+div.target-two div.column-5 {
+    background-color: rgb(184, 236, 207);
+    color: blue;
+}
+
+/* Estilos para los párrafos */
+div p.porcentaje {
+    margin-left: 4em;
+    font-size: 13px;
+    font-weight: 700;
+    color: gray;
+    text-align: right;
+}
+
+div p.comp {
+    margin-left: 2em;
+    font-size: medium;
+}
+
+/* Estilos para el footer */
+footer {
+    width: 100%;
+    height: 3em;
+    background: linear-gradient(to top, hsl(228, 45%, 44%), hsl(228, 45%, 80%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+}
+
+/* Estilos para el botón "boton" y su comportamiento al hacer hover */
+button.boton {
+    width: 90%;
+    height: 3em;
+    border-radius: 20px;
+    background: linear-gradient(to top, hwb(228 24% 36%), hsl(228, 45%, 80%));
+}
+
+button.boton:hover {
+    background: hwb(228 24% 36%);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    div.container {
+        width: 90%;
+        max-width: 100%; /* Establecemos un ancho máximo del 90% */
+    }
+
+    div.number {
+        width: 80%; /* Reducimos el ancho aún más para pantallas pequeñas */
+    }
+
+    div.target-one {
+        width: 90%;
+        max-width: 90%;
+    }
+
+    div.target-two {
+        width: 90%;
+        max-width: 90%;
+    }
+    
+   
+}
